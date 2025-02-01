@@ -19,29 +19,25 @@ function radaMezer(pocet){
     return radek;
 }
 
-document.getElementById('btnCtverec').addEventListener('click', vykresliCtverec);
-document.getElementById('btnTrojuhPravy').addEventListener('click', vykresliTrojuhPravy);
-document.getElementById('btnTrojuhLevy').addEventListener('click', vykresliTrojuhLevy);
-document.getElementById('btnPyramida').addEventListener('click', vykresliPyramidu);
-document.getElementById('btnPyramidaObracena').addEventListener('click', vykresliPyramiduObracenou);
+// Zavedení obsluhy tlačítek pro vykreslení obrazců
+let pocetRadku = 10;    // číslo určuje počet řádků v obrazcích
+let divVystup = document.getElementById('divVystup'); // odkaz na element, kam se bude výstup zobrazovat
 
-function vykresliCtverec() {
-    document.getElementById('divVystup').innerHTML = generateCtverec(5); // Příklad s 5 řádky
+document.getElementById('btnCtverec').onclick = function() {
+    divVystup.innerHTML = generateCtverec(pocetRadku);
+}
+document.getElementById('btnTrojuhelnikPravy').onclick = function() {
+    divVystup.innerHTML = generateTrojuhelnikPravy(pocetRadku);
 }
 
-function vykresliTrojuhPravy() {
-    document.getElementById('divVystup').innerHTML = generateTrojuhelnikPravy(5); // Příklad s 5 řádky
+document.getElementById('btnTrojuhelnikLevy').onclick = function() {
+    divVystup.innerHTML = generateTrojuhelnikLevy(pocetRadku);
 }
 
-function vykresliTrojuhLevy() {
-    document.getElementById('divVystup').innerHTML = generateTrojuhelnikLevy(5); // Příklad s 5 řádky
+document.getElementById('btnPyramida').onclick = function() {
+    divVystup.innerHTML = generatePyramida(pocetRadku); 
 }
 
-function vykresliPyramidu() {
-    document.getElementById('divVystup').innerHTML = generatePyramida(5); // Příklad s 5 řádky
+document.getElementById('btnPyramidaObracena').onclick = function() {
+    divVystup.innerHTML = generatePyramidaObracena(pocetRadku);
 }
-
-function vykresliPyramiduObracenou() {
-    document.getElementById('divVystup').innerHTML = generatePyramidaObracena(5); // Příklad s 5 řádky
-}
-

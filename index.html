@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Martin Procházka">
-    <meta name="description" content="Generování greometrických obrazců">
-    <title>Generování greometrických obrazců</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Martin Procházka">
+        <meta name="description" content="Generování greometrických obrazců">
+        <title>Generování greometrických obrazců</title>
 
-    <!-- Import CSS stylového frameworku od W3Schools.com -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Import CSS stylového frameworku od W3Schools.com -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Import vlastních stylů stránky -->
-    <link rel="stylesheet" href="style.css">
+        <!-- Import vlastních stylů stránky -->
+        <link rel="stylesheet" href="style.css">
 
-    <!-- Importy skriptů funkcí sestavování řetězců obrazců -->
-    <script src="ctverec.js"></script>
-    <script src="trojuhelnik.js"></script>
-    <script src="pyramida.js"></script>
-</head>
-<body>
+        <!-- Importy skriptů funkcí sestavování řetězců obrazců -->
+        <script src="ctverec.js"></script>
+        <script src="trojuhelnik.js"></script>
+        <script src="pyramida.js"></script>
+    </head>
+    <body>
 
-    <!-- Box pro výstup -->
-    <div id="divHorni">
-        <h1>Vykreslování obrazců</h1>
-        <div id="divVystup">
-            Tady bude výstup
+        <!-- Box pro výstup -->
+        <div id="divHorni">
+            <h1>Vykreslování obrazců</h1>
+            <div id="divVystup">
+                Tady bude výstup
+            </div>
         </div>
-    </div>
 
-    <!-- Box pro tlačítka -->
-    <div id="divDolni">
-        <form class="w3-container">
-            <button type="button" class="w3-button w3-blue" onclick="vykresliCtverec()">Čtverec</button>
-            <button type="button" class="w3-button w3-green" onclick="vykresliTrojuhPravy()">Trojúhelník pravý</button>
-            <button type="button" class="w3-button w3-yellow" onclick="vykresliTrojuhLevy()">Trojúhelník levý</button>
-            <button type="button" class="w3-button w3-red" onclick="vykresliPyramidu()">Pyramida</button>
-            <button type="button" class="w3-button w3-purple" onclick="vykresliPyramiduObracenou()">Pyramida obrácená</button>
-        </form>
-    </div>
+        <!-- Box pro tlačítka -->
+        <div id="divDolni">
+            <form class="w3-container">
+                <button type="button" class="w3-button w3-blue" onclick="vykresliCtverec()">Čtverec</button>
+                <button type="button" class="w3-button w3-green" onclick="vykresliTrojuhPravy()">Trojúhelník pravý</button>
+                <button type="button" class="w3-button w3-yellow" onclick="vykresliTrojuhLevy()">Trojúhelník levý</button>
+                <button type="button" class="w3-button w3-red" onclick="vykresliPyramidu()">Pyramida</button>
+                <button type="button" class="w3-button w3-purple" onclick="vykresliPyramiduObracenou()">Pyramida obrácená</button>
+            </form>
+        </div>
 
-    <!-- Import scriptů pro kreslení -->
-    <script src="vykresleni.js"></script>
+        <!-- Import scriptů pro kreslení -->
+        <script src="vykresleni.js"></script>
 
-</body>
+    </body>
 </html>
