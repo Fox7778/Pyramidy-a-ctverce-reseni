@@ -3,58 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pyramida</title>
-    <style>
-        body {
-            font-family:'Courier New', Courier, monospace;
-            font-size: 20px;        
-        }
-    </style>
+    <meta name="author" content="Martin Procházka">
+    <meta name="description" content="Generování greometrických obrazců">
+    <title>Generování greometrických obrazců</title>
+
+    <!-- Import CSS stylového frameworku od W3Schools.com -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Import vlastních stylů stránky -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importy skriptů funkcí sestavování řetězců obrazců -->
+    <script src="ctverec.js"></script>
+    <script src="trojuhelnik.js"></script>
+    <script src="pyramida.js"></script>
 </head>
 <body>
-    <div class="trojuhelnik-levy" id="trojuhelnik-levy"></div>
-    <div class="trojuhelnik-pravy" id="trojuhelnik-pravy"></div>
-    <div class="pyramid" id="pyramid"></div>
 
-    <script>
-        function radek(pocet){
-            let radek = '';
-            for (let i = 1; i <= pocet; i++) {
-                radek += '*';
-            }
-            return radek;
-        }
-        function generateTrojuhelnikLevy(rows) {
-            let pyramid = '';
-            for (let i = 1; i <= rows; i++) {
-                pyramid += radek(2*i-1) + '<br>';
-            }
-            return pyramid;
-        }
-        function generateTrojuhelnikPravy(rows) {
-            let pyramid = '';
-            for (let i = 1; i <= rows; i++) {
-                for (let j = 1; j <= 2 * (rows - i); j++) {
-                    pyramid += '&nbsp;';
-                }
-                pyramid += radek(2*i-1) + '<br>';
-            }
-            return pyramid;
-        }
-        function generatePyramid(rows) {
-            let pyramid = '';
-            for (let i = 1; i <= rows; i++) {
-                for (let j = 1; j <= rows-i; j++) {
-                    pyramid += '&nbsp;';
-                }
-                pyramid += radek(2*i-1) + '<br>';
-            }
-            return pyramid;
-        }
+    <!-- Box pro výstup -->
+    <div id="divHorni">
+        <h1>Vykreslování obrazců</h1>
+        <div id="divVystup">
+            Tady bude výstup
+        </div>
+    </div>
 
-        document.getElementById('trojuhelnik-levy').innerHTML = generateTrojuhelnikLevy(10);
-        document.getElementById('trojuhelnik-pravy').innerHTML = generateTrojuhelnikPravy(10);
-        document.getElementById('pyramid').innerHTML = generatePyramid(10);
-    </script>
+    <!-- Box pro tlačítka -->
+    <div id="divDolni">
+        <form class="w3-container">
+            <button type="button" class="w3-button w3-blue" onclick="vykresliCtverec()">Čtverec</button>
+            <button type="button" class="w3-button w3-green" onclick="vykresliTrojuhPravy()">Trojúhelník pravý</button>
+            <button type="button" class="w3-button w3-yellow" onclick="vykresliTrojuhLevy()">Trojúhelník levý</button>
+            <button type="button" class="w3-button w3-red" onclick="vykresliPyramidu()">Pyramida</button>
+            <button type="button" class="w3-button w3-purple" onclick="vykresliPyramiduObracenou()">Pyramida obrácená</button>
+        </form>
+    </div>
+
+    <!-- Import scriptů pro kreslení -->
+    <script src="vykresleni.js"></script>
+
 </body>
 </html>
