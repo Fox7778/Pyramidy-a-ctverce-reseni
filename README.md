@@ -3,7 +3,7 @@ Tento projekt procvičuje iterační cykly. V uživatelském rozhraní stránky 
 Pět funkci je kompletně vytvořených a spouštěných kliknutím na příslušné barevné tlačítko.
 
 ## Kreativní úkol  
-Šesté (oranžové) tlačítko s popiskem "Vlastní tvat") doplň vlastním kódem libovolného obrazce (obdélník, kosočtverec, duté tvary již hotových vyplněných, atd...). Cokoliv, co tě napadne. ;-)
+Šesté (oranžové) tlačítko s popiskem "Vlastní tvat") doplň vlastním kódem libovolného obrazce (obdélník, kosočtverec, duté tvary již hotových vyplněných tvarů, atd...). Cokoliv, co tě napadne. ;-)
 
 ## Výchozí stav
 
