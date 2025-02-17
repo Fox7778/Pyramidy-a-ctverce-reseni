@@ -2,7 +2,7 @@
 Tento projekt procvičuje iterační cykly. V uživatelském rozhraní stránky stylované pomocí CSS knihovny w3.css vykreslí geometrické tvary sestavené z řetězců hvěždiček a mezer.
 Pět funkci je kompletně vytvořenýo. Vyzkoušet si je můžeš kliknutím na příslušné barevné tlačítko.
 
-## Kreativní úkol  
+## Kreativní zadání  
 Šesté (oranžové) tlačítko s popiskem "Vlastní tvat") doplň vlastním kódem libovolného obrazce (kosočtverec, přesýpací hodiny - dvě pyramidy symetricky na sobě, dutý tvar - pouze obrys, atd..). 
 Prostě cokoliv, co tě napadne. ;-)
 
