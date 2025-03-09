@@ -41,3 +41,6 @@ document.getElementById('btnPyramida').onclick = function() {
 document.getElementById('btnPyramidaObracena').onclick = function() {
     divVystup.innerHTML = generatePyramidaObracena(pocetRadku);
 }
+document.getElementById('btnVlastniTvar').onclick = function() {
+    divVystup.innerHTML = kosoctverecF(pocetRadku);
+}
