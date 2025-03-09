@@ -1,20 +1,17 @@
-// Popis: Skript pro vykreslení trojúhelníků
-// Autor: Martin Procházka
 
-// Připraví HTML kód pro vykreslení levého trojúhelníku
-function generateTrojuhelnikLevy(rows) {
+function TrojuhelnikLevyF(radky) {
     let trojuhelnik = '';
-    for (let i = 1; i <= rows; i++) {
-        trojuhelnik += radaHvezdicek(i) + radaMezer(rows - i) + '<br>';
+    for (let i = 1; i <= radky; i++) {
+        trojuhelnik += radaHvezdicek(i) + radaMezer(radky - i) + '<br>';
     }
     return trojuhelnik;
 }
 
-// Připraví HTML kód pro vykreslení pravého trojúhelníku
-function generateTrojuhelnikPravy(rows) {
+
+function TrojuhelnikPravyF(radky) {
     let trojuhelnik = '';
-    for (let i = 1; i <= rows; i++) {
-        trojuhelnik += radaMezer(rows - i) + radaHvezdicek(i) + '<br>';
+    for (let i = 1; i <= radky; i++) {
+        trojuhelnik += radaMezer(radky - i) + radaHvezdicek(i) + '<br>';
     }
     return trojuhelnik;
 }

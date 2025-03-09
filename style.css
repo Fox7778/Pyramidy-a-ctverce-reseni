@@ -1,26 +1,26 @@
-/* CSS pro stránku index.html */
-/* Autor: Martin Procházka */
-
 #divHorni {
-    display: flex;            /* divHorni bude FlexBoxem */
-    flex-direction: column;   /* Nastaví jeho obsah do sloupce */
-    align-items: center;      /* Vycentruje jeho obsah horizontálně */
-    justify-content: center;  /* Vycentruje jeho obsah vertikálně */
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;  
     margin: 20px;
 }
 
 #divDolni {
-    display: flex;            /* divDolni bude FlexBoxem */
-    justify-content: center;  /* Vycentruje jeho obsah horizontálně */
+    display: flex;            
+    justify-content: center;  
     margin: 20px;
 }
 
-#divVystup {
+#Vystup {
     border: 1px solid black;
     background-color: #f0f0f0;
     width: 400px;
     padding: 10px;
     font-family:'Courier New', Courier, monospace;
     font-size: 26px;   
-    text-align: center;       /* Zobrazovaný text obrazce bude centrován */
+    text-align: center;      
+}
+.w3-button {
+    border-radius: 12px;
 }

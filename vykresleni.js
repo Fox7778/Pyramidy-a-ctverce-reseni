@@ -1,7 +1,4 @@
-// Script, který zajistí vykreslování obrazců do DIV elementu s id="divVystup"
-// Autor: Martin Procházka
 
-// Připraví řetězec řady hvězdiček. Počet hvězdiček je dán parametrem. 
 function radaHvezdicek(pocet){
     let radek = '';
     for (let i = 1; i <= pocet; i++) {
@@ -10,7 +7,6 @@ function radaHvezdicek(pocet){
     return radek;
 }
 
-// Připraví řetězec řady mezer. Počet mezer je dán parametrem.
 function radaMezer(pocet){
     let radek = '';
     for (let i = 1; i <= pocet; i++) {
@@ -19,27 +15,27 @@ function radaMezer(pocet){
     return radek;
 }
 
-// Zavedení obsluhy tlačítek pro vykreslení obrazců
-let pocetRadku = 10;    // číslo určuje počet řádků v obrazcích
-let divVystup = document.getElementById('divVystup'); // odkaz na element, kam se bude výstup zobrazovat
+
+let pocetRadku = 10;    
+let divVystup = document.getElementById('Vystup'); 
 
 document.getElementById('btnCtverec').onclick = function() {
-    divVystup.innerHTML = generateCtverec(pocetRadku);
+    divVystup.innerHTML = CtverecF(pocetRadku);
 }
 document.getElementById('btnTrojuhelnikPravy').onclick = function() {
-    divVystup.innerHTML = generateTrojuhelnikPravy(pocetRadku);
+    divVystup.innerHTML = TrojuhelnikPravyF(pocetRadku);
 }
 
 document.getElementById('btnTrojuhelnikLevy').onclick = function() {
-    divVystup.innerHTML = generateTrojuhelnikLevy(pocetRadku);
+    divVystup.innerHTML = TrojuhelnikLevyF(pocetRadku);
 }
 
 document.getElementById('btnPyramida').onclick = function() {
-    divVystup.innerHTML = generatePyramida(pocetRadku); 
+    divVystup.innerHTML = PyramidaF(pocetRadku); 
 }
 
 document.getElementById('btnPyramidaObracena').onclick = function() {
-    divVystup.innerHTML = generatePyramidaObracena(pocetRadku);
+    divVystup.innerHTML = PyramidaObracenaF(pocetRadku);
 }
 document.getElementById('btnKos').onclick = function() {
     divVystup.innerHTML = kosoctverecF(pocetRadku);
